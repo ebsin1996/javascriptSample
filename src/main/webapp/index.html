@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Index WebApp</title>
+<script type="text/javascript">function add() {
+	var a=prompt("enter a string");
+	var b=prompt("enter a number");
+	alert(a+b);
+	document.writeln(a+b);
+	var c=Number(a);
+	var d=Number(b);
+	alert(c+d);
+	document.writeln(c+d);
+}
+</script>
+
+<script type="text/javascript">
+function check() {
+	var e=document.getElementById("text1").value;
+	var f=document.getElementById("text2").value;
+	var c=Number(e);
+	var d=Number(f);
+	alert(c+d);
+}
+</script>
+
+
+
+<script type="text/javascript">
+function sub() {
+	var g=document.getElementById("text1").value;
+	var h=document.getElementById("text2").value;
+	alert(g-h);
+}
+</script>
+
+<script type="text/javascript">
+function div() {
+	var i=document.getElementById("text1").value;
+	var j=document.getElementById("text2").value;
+	alert(i/j);
+}
+</script>
+<script type="text/javascript">
+function mult() {
+	var a=document.getElementById("text1").value;
+	var b=document.getElementById("text2").value;
+	alert(a*b);
+}
+</script>
+</head>
+<body>
+<p>hello from the other side</p>
+<form action="">
+<input type="text" name="t1" id="text1">
+<input type="text" name="t2" id="text2">
+<input type="button" value="add" onclick="check()">
+<input type="button" value="sub" onclick="sub()">
+<input type="button" value="div" onclick="div()">
+<input type="button" value="mult" onclick="mult()">
+</form>
+<input type="button" value="CallAdd" onclick="add()">
+</body>
+</html>
